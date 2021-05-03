@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:showIn="@layout/activity_main">
+
+	<ImageView
+		android:id="@+id/backgroundImage"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/start"
+		android:scaleType="fitXY"
+		android:contentDescription="Startup Background"
+    />
+
+	<TextView
+		android:id="@+id/mainText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:text="Guten Morgen\n\nWie geht es Dir?"
+		android:typeface="serif"
+		android:textSize="12pt"
+		android:textStyle="bold"
+		android:textAlignment="center"
+		android:layout_marginHorizontal="20px"
+		android:scrollbars="vertical"
+		/>
+
+
+</RelativeLayout>

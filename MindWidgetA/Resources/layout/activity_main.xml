@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<include
+		android:id="@+id/main_include"
+		layout="@layout/content_main" />
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/neutral"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
+		android:layout_margin="@dimen/fab_margin"
+		android:src="@drawable/neutral"
+		android:background="@android:color/holo_green_dark"
+		android:backgroundTintMode="src_over"
+		app:backgroundTint="@android:color/holo_orange_light"
+        />
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/happy"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|left"
+		android:layout_margin="@dimen/fab_margin"
+		android:src="@drawable/ihappy"
+		android:background="@android:color/holo_green_dark"
+		android:backgroundTintMode="src_over"
+		app:backgroundTint="@android:color/holo_green_light"
+        />
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/sad"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|right"
+		android:layout_margin="@dimen/fab_margin"
+		android:src="@drawable/sad"
+		android:background="@android:color/holo_green_dark"
+		android:backgroundTintMode="src_over"
+		app:backgroundTint="@android:color/holo_red_light"
+        />
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/later"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
+		android:layout_margin="@dimen/fab_margin"
+		android:src="@drawable/later2"
+		android:background="@android:color/holo_green_dark"
+		android:backgroundTintMode="src_over"
+		app:backgroundTint="@android:color/holo_orange_light"
+		android:visibility="gone"
+        />
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/ok"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|left"
+		android:layout_margin="@dimen/fab_margin"
+		android:src="@drawable/ok4"
+		android:background="@android:color/holo_green_dark"
+		android:backgroundTintMode="src_over"
+		app:backgroundTint="@android:color/holo_green_light"
+		android:visibility="gone"
+        />
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/no"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|right"
+		android:layout_margin="@dimen/fab_margin"
+		android:src="@drawable/cross"
+		android:background="@android:color/holo_green_dark"
+		android:backgroundTintMode="src_over"
+		app:backgroundTint="@android:color/holo_red_light"
+		android:visibility="gone"
+	/>
+	<Button
+		android:id="@+id/info"
+		android:text="Info"
+		android:layout_width="300px"
+		android:layout_height="200px"
+		android:layout_margin="50px"
+		android:layout_gravity="bottom|center"
+		android:visibility="gone"
+        />
+	<ImageView
+		android:id="@+id/back"
+		android:contentDescription="description"
+		android:layout_width="wrap_content"
+		android:layout_height="100px"
+		android:src="@drawable/back"
+		android:clickable="true"
+		android:layout_gravity="bottom|center"
+		android:layout_marginBottom="20px"
+		android:visibility="gone"
+		/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

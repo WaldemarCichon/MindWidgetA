@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<include
+		android:id="@+id/main_include"
+		layout="@layout/content_main"
+/>
+
+
+	<ImageView
+		android:id="@+id/happy_widget"
+		android:contentDescription="description"
+		android:layout_width="wrap_content"
+		android:layout_height="128px"
+		android:src="@drawable/happy_c"
+		android:clickable="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginBottom="20px"
+		/>
+
+	<ImageView
+		android:id="@+id/neutral_widget"
+		android:contentDescription="description"
+		android:layout_width="wrap_content"
+		android:layout_height="128px"
+		android:src="@drawable/neutral_c"
+		android:clickable="true"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="20px"
+		/>
+
+	<ImageView
+		android:id="@+id/sad_widget"
+		android:contentDescription="description"
+		android:layout_width="wrap_content"
+		android:layout_height="128px"
+		android:src="@drawable/sad_c"
+		android:clickable="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"
+		android:layout_marginBottom="20px"
+		/>
+
+	<ImageView
+		android:id="@+id/ok_widget"
+		android:contentDescription="description"
+		android:layout_width="wrap_content"
+		android:layout_height="128px"
+		android:src="@drawable/ok"
+		android:clickable="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginBottom="20px"
+		android:layout_marginLeft="80px"
+		android:visibility="gone"
+		/>
+
+	<ImageView
+		android:id="@+id/no_widget"
+		android:contentDescription="description"
+		android:layout_width="wrap_content"
+		android:layout_height="128px"
+		android:src="@drawable/cross"
+		android:clickable="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"
+		android:layout_marginBottom="20px"
+		android:layout_marginRight="80px"
+		android:visibility="gone"
+		/>
+	<ImageView
+		android:id="@+id/back_widget"
+		android:contentDescription="description"
+		android:layout_width="wrap_content"
+		android:layout_height="100px"
+		android:src="@drawable/back"
+		android:clickable="true"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="20px"
+		android:visibility="gone"
+		/>
+	<Button
+		android:id="@+id/info_widget"
+		android:text="Info"
+		android:layout_width="200px"
+		android:layout_height="100px"
+		android:layout_margin="50px"
+		android:layout_centerInParent="true"
+		android:layout_alignParentBottom="true"
+		android:visibility="gone"
+        />
+</RelativeLayout>

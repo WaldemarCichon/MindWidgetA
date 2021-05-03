@@ -1,0 +1,8 @@
+﻿<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="288dip"
+    android:minHeight="72dip"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="144dip"
+    android:updatePeriodMillis="1000"
+    android:initialLayout="@layout/widget_main"
+    android:previewImage="@drawable/happy" />
